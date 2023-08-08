@@ -16,7 +16,8 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       borderRadius: {
-        'custom-1': '35px',
+        'heading': '35px',
+        'calculator': '16px',
       },
       colors: {
         'blue': '#345FF6',
@@ -26,8 +27,11 @@ module.exports = {
         'pure-white': '#FFFFFF',
       },
       fontSize: {
-        'heading': '48px',
-        'heading-md': '64px',
+        'body-s': '0.875rem',
+        'body-m': '1rem',
+        'heading-m': '1.5rem',
+        'heading-l': '3rem',
+        'heading-xl': '4rem',
       },
       lineHeight: {
         'heading': '110%',
@@ -36,6 +40,9 @@ module.exports = {
       letterSpacing: {
         'heading': '-5%',
       },
+      dropShadow: {
+        'calculator': '16px 32px 56px rgba(143, 174, 207, 0.25)',
+      }
     },
   },
   plugins: [],
