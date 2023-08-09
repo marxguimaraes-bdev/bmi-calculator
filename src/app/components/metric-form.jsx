@@ -37,7 +37,7 @@ function MetricForm() {
           <Input id="weight" unit="kg" register={register} />
         </div>
       </div>
-      <BMIDisplay bmi={bmi} />
+      <BMIDisplay bmi={bmi} height={height} />
     </>
   )
 };

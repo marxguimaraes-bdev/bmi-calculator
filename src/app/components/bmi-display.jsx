@@ -1,4 +1,33 @@
-function BMIDisplay({ bmi }) {
+const BMI_CLASSIFICATION = {
+  lower_healthy: 18.5,
+  upper_healthy: 24.9,
+  overweight: 29.9,
+};
+
+function getWeightClassification(bmi) {
+  if (bmi < BMI_CLASSIFICATION.lower_healthy) {
+    return 'underweight';
+  }
+
+  if (bmi <= BMI_CLASSIFICATION.upper_healthy) {
+    return 'a healthy weight';
+  }
+
+  if (bmi <= BMI_CLASSIFICATION.overweight) {
+    return 'overweight';
+  }
+
+  return 'obese';
+}
+
+function getIdealWeightMetric(height) {
+  const lowerLimit = ((height/100) ** 2) * BMI_CLASSIFICATION.lower_healthy;
+  const upperLimit = ((height/100) ** 2) * BMI_CLASSIFICATION.upper_healthy;
+
+  return `${lowerLimit.toFixed(1)}kgs - ${upperLimit.toFixed(1)}kgs`;
+}
+
+function BMIDisplay({ bmi, height }) {
   const floatValue = parseFloat(bmi);
 
   return isNaN(floatValue) ? (
@@ -12,7 +41,7 @@ function BMIDisplay({ bmi }) {
         <div className="text-body-m leading-body font-semibold">Your BMI is...</div>
         <div className="text-heading-xl leading-heading font-semibold">{ floatValue.toFixed(1) }</div>
       </div>
-      <div className="text-body-s">Your BMI suggests you’re a healthy weight. Your ideal weight is between <span className="font-bold">63.3kgs - 85.2kgs</span>.</div>
+      <div className="text-body-s">Your BMI suggests you’re { getWeightClassification(bmi) }. Your ideal weight is between <span className="font-bold">{ getIdealWeightMetric(height) }</span>.</div>
     </div>
   );
 }
