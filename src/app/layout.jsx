@@ -8,14 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className='h-screen' lang="en">
-    <head>
+      <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
       </head>
-      <body className='min-h-screen'>
-        <div className='flex flex-col min-h-screen items-center bg-pure-white'>
-          {children}
-        </div>
-      </body>
+      <body className='min-h-screen'>{children}</body>
     </html>
   )
 }

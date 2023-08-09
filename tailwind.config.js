@@ -30,6 +30,7 @@ module.exports = {
         'body-s': '0.875rem',
         'body-m': '1rem',
         'heading-m': '1.5rem',
+        'heading': '2rem',
         'heading-l': '3rem',
         'heading-xl': '4rem',
       },
@@ -38,7 +39,9 @@ module.exports = {
         'body': '150%',
       },
       letterSpacing: {
-        'heading': '-5%',
+        'heading-m': '-0.075rem',
+        'heading-l': '-0.15rem',
+        'heading-xl': '-0.2rem',
       },
       dropShadow: {
         'calculator': '16px 32px 56px rgba(143, 174, 207, 0.25)',
