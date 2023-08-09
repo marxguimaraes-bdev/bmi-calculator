@@ -44,7 +44,7 @@ module.exports = {
         'heading-xl': '-0.2rem',
       },
       dropShadow: {
-        'calculator': '16px 32px 56px rgba(143, 174, 207, 0.25)',
+        'custom': '32px 16px 56px rgba(143, 174, 207, 0.25)',
       },
     },
   },

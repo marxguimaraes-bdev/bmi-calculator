@@ -55,4 +55,36 @@ describe('IndexPage', () => {
       expect(title).toBeInTheDocument();
     });
   });
+
+  describe('section 3', () => {
+    it('renders the second section heading', () => {
+      render(<IndexPage />)
+
+      const heading = screen.getByRole('heading', {
+        name: /Limitations of BMI/i,
+      })
+
+      expect(heading).toBeInTheDocument();
+    });
+
+    it('renders the first topic title', () => {
+      render(<IndexPage />)
+
+      const title = screen.getByRole('heading', {
+        name: /Gender/i,
+      })
+
+      expect(title).toBeInTheDocument();
+    });
+
+    it('renders the second topic title', () => {
+      render(<IndexPage />)
+
+      const title = screen.getByRole('heading', {
+        name: /Age/i,
+      })
+
+      expect(title).toBeInTheDocument();
+    });
+  });
 });
