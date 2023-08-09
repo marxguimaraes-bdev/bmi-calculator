@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useForm, useWatch } from 'react-hook-form';
 
-import BMIDisplay from './bmi-display';
+import BMIDisplay from '@/app/components/bmi-display';
 import Input from '@/components/input';
+import { calculateBMI } from '@/utils/body-mass-index';
 
 function MetricForm() {
   const [bmi, setBmi] = useState(NaN);
@@ -21,7 +22,7 @@ function MetricForm() {
     if ([height, weight].some(isNaN)) {
       setBmi(NaN);
     } else {
-      setBmi((weight/((height/100) ** 2)).toFixed(1));
+      setBmi(calculateBMI(height, weight));
     }
   }, [height, weight]);
 

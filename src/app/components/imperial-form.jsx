@@ -3,6 +3,7 @@ import { useForm, useWatch } from 'react-hook-form';
 
 import BMIDisplay from '@/app/components/bmi-display';
 import Input from '@/components/input';
+import { calculateBMI } from '@/utils/body-mass-index';
 
 function ImperialForm() {
   const [bmi, setBmi] = useState(NaN);
@@ -17,7 +18,7 @@ function ImperialForm() {
   const [heightFt, heightIn, weightSt, weightLbs] = useWatch({
     control,
     name: ['heightFt', 'heightIn', 'weightSt', 'weightLbs'],
-  }).map(parseFloat);
+  }).map(n => n === '' ? 0 : parseFloat(n));
   
   useEffect(() => {
     if ([heightFt, heightIn, weightSt, weightLbs].some(isNaN)) {
@@ -26,7 +27,7 @@ function ImperialForm() {
       const height = (heightFt * 12) + heightIn;
       const weight = (weightSt * 14) + weightLbs;
 
-      setBmi((weight/(height ** 2)) * 703);
+      setBmi(calculateBMI(height, weight, 'imperial'));
     }
   }, [heightFt, heightIn, weightSt, weightLbs]);
 
@@ -44,7 +45,7 @@ function ImperialForm() {
           <Input id="weightLbs" unit="lbs" register={register} />
         </div>
       </div>
-      <BMIDisplay bmi={bmi} />
+      <BMIDisplay bmi={bmi} height={(heightFt * 12) + heightIn} system="imperial" />
     </>
   )
 };

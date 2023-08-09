@@ -18,4 +18,3 @@ describe('BMIDisplay', () => {
     expect(div).toBeInTheDocument()
   });
 });
-

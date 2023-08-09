@@ -10,4 +10,3 @@ describe('Calculator', () => {
     expect(div).toBeInTheDocument()
   });
 });
-
