@@ -42,7 +42,7 @@ module.exports = {
       },
       dropShadow: {
         'calculator': '16px 32px 56px rgba(143, 174, 207, 0.25)',
-      }
+      },
     },
   },
   plugins: [],
