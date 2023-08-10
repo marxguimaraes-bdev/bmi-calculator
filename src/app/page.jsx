@@ -5,18 +5,18 @@ import SmallCard from "@/components/small-card";
 
 export default function IndexPage() {
   return (
-    <div className='flex flex-col font-custom min-h-screen items-center bg-pure-white gap-y-10 pb-10'>
-      <section className="flex flex-col w-full lg:flex-row">
-        <main className="flex flex-col items-center gap-y-6 text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-to-r from-[#D6E6FE] to-[#D6FCFE] lg:py-24 md:px-22 lg:pl-24 lg:pr-[26rem] lg:max-w-[61rem] lg:h-[46rem] lg:items-start lg:text-left">
+    <main className='flex flex-col font-custom min-h-screen items-center bg-pure-white gap-y-10 pb-10'>
+      <section title="Body Mass Index Calculator" className="flex flex-col w-full lg:flex-row">
+        <div className="flex flex-col items-center gap-y-6 text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-to-r from-[#D6E6FE] to-[#D6FCFE] lg:py-24 md:px-22 lg:pl-24 lg:pr-[26rem] lg:max-w-[61rem] lg:h-[46rem] lg:items-start lg:text-left">
           <Image src="/images/logo.svg" width={40} height={40} alt="Company logo" className="lg:w-[64px] lg:h-[64px]" />
           <div className="flex flex-col gap-y-6 lg:mt-12 lg:gap-y-9">
             <h1 className="text-gunmetal text-heading-l leading-heading font-semibold md:px-[8rem] lg:px-0 lg:text-heading-xl">Body Mass Index Calculator</h1>
             <div className="text-dark-electric-blue leading-body">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</div>
           </div>
-        </main>
+        </div>
         <Calculator  />
       </section>
-      <section className="flex flex-col mx-6 lg:gap-y-10 md:mx-10 lg:mx-[8.75rem]">
+      <section title="What your BMI result means" className="flex flex-col mx-6 lg:gap-y-10 md:mx-10 lg:mx-[8.75rem]">
         <div className="flex flex-col justify-around gap-y-10 md:flex-row md:gap-x-[4rem] lg:gap-x-[8.75rem] md:-ml-[12%] lg:ml-0">
           <Image src="/images/image-man-eating.webp" alt="Man eating sushi" width={375} height={352} className="lg:w-[564px] lg:h-[533px]" />
           <div className="flex flex-col gap-y-8">
@@ -37,7 +37,7 @@ export default function IndexPage() {
           </Card>
         </div>
       </section>
-      <section className="flex flex-col mx-6 gap-y-14 md:mx-10 lg:mx-[8.75rem]">
+      <section title="Limitations of BMI" className="flex flex-col mx-6 gap-y-14 md:mx-10 lg:mx-[8.75rem]">
         <div className="flex flex-col text-center gap-y-10 md:flex-row md:gap-x-[4rem] lg:gap-x-[8.75rem] lg:grid lg:grid-cols-2">
           <div className="flex flex-col gap-y-8 lg:text-start">
             <h1 className="text-heading text-gunmetal leading-heading font-semibold leading-heading-s lg:text-heading-l">Limitations of BMI</h1>
@@ -63,6 +63,6 @@ export default function IndexPage() {
           </SmallCard>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

@@ -33,7 +33,7 @@ function ImperialForm() {
 
   return (
     <>
-      <div className="flex flex-col gap-6">
+      <form className="flex flex-col gap-6">
         <div className="grid grid-cols-2 gap-x-6 gap-y-2">
           <label htmlFor="heightFt" className="col-span-2 text-body-s font-normal leading-body text-dark-electric-blue">Height</label>
           <Input id="heightFt" unit="ft" register={register} />
@@ -44,7 +44,7 @@ function ImperialForm() {
           <Input id="weightSt" unit="st" register={register} />
           <Input id="weightLbs" unit="lbs" register={register} />
         </div>
-      </div>
+      </form>
       <BMIDisplay bmi={bmi} height={(heightFt * 12) + heightIn} system="imperial" />
     </>
   )
