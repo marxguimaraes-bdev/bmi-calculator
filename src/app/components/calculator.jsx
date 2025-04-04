@@ -17,15 +17,15 @@ function Calculator() {
   });
 
   return (
-    <div className="flex flex-col gap-y-6 mx-5 -mt-[45%] bg-pure-white text-gunmetal drop-shadow-custom rounded-calculator p-6 md:-mt-[35%] lg:mt-[10.4rem] lg:-ml-[15%] lg:w-[30rem] lg:h-fit lg:p-8">
-      <div className="text-heading-m font-semibold">Enter your details below</div>
+    <div className="flex flex-col gap-y-6 lg:gap-y-8 mx-5 -mt-[45%] bg-pure-white text-gunmetal drop-shadow-custom rounded-calculator p-6 md:-mt-[35%] lg:mt-[167px] lg:-ml-[266px] lg:w-[564px] lg:h-fit lg:p-8">
+      <div className="text-heading-m font-semibold leading-heading">Enter your details below</div>
       <div className="grid grid-cols-2 gap-x-6">
         <div className="flex flex-start items-center">
-          <input {...register('system')} id="metric-system" value="metric" type="radio" className="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue"/>
+          <input {...register('system')} id="metric-system" value="metric" type="radio" className="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full transition-colors duration-200 hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue"/>
           <label htmlFor="metric-system" className="text-body-m font-semibold">Metric</label>
         </div>
         <div className="flex flex-start items-center">
-          <input {...register('system')} id="imperial-system" value="imperial" type="radio" className="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue" />
+          <input {...register('system')} id="imperial-system" value="imperial" type="radio" className="mr-5 w-8 h-8 appearance-none border bg-pure-white border-borders rounded-full transition-colors duration-200 hover:border-blue hover:cursor-pointer checked:hover:border-borders checked:border-8 checked:bg-blue" />
           <label htmlFor="imperial-system" className="text-body-m font-semibold">Imperial</label>
         </div>
       </div>
