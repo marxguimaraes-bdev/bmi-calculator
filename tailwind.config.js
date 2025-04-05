@@ -14,6 +14,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-linear': 'linear-gradient(to left top, rgba(214, 230, 254, 1), rgba(214, 252, 254, 0))',
       },
       borderRadius: {
         'heading': '35px',
