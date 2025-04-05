@@ -7,9 +7,9 @@ export default function IndexPage() {
   return (
     <main className='flex flex-col font-custom min-h-screen items-center bg-pure-white gap-y-10 pb-10'>
       <section title="Body Mass Index Calculator" className="flex flex-col w-full lg:overflow-visible lg:flex-row lg:px-6">
-        <div className="flex flex-col items-center gap-y-[24px] md:gap-y-[40px] lg:gap-y-[127px] text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-linear lg:py-[4.47625rem] md:px-22 lg:pl-[7.25rem] lg:pr-[18.625rem] lg:max-w-[61.125rem] lg:h-[46.0625rem] lg:items-start lg:text-left">
+        <div className="flex flex-col items-center gap-y-[1.5rem] md:gap-y-[2.5rem] lg:gap-y-[7.9375rem] text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-linear lg:py-[4.47625rem] md:px-22 lg:pl-[7.25rem] lg:pr-[18.625rem] lg:max-w-[61.125rem] lg:h-[46.0625rem] lg:items-start lg:text-left">
           <Image src="/images/logo.svg" width={40} height={40} alt="Company logo" className="lg:w-[4rem] lg:h-[4rem]" />
-          <div className="flex flex-col gap-y-6 lg:mt-12 lg:gap-y-[35px]">
+          <div className="flex flex-col gap-y-6 lg:mt-12 lg:gap-y-[2.1875rem]">
             <h1 className="text-gunmetal text-heading-l leading-heading font-semibold md:px-[8rem] lg:pl-0 lg:pr-12 lg:text-heading-xl">Body Mass Index Calculator</h1>
             <div className="text-dark-electric-blue leading-body lg:pr-[6.1875rem]">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</div>
           </div>

@@ -12,7 +12,7 @@ function BMIDisplay({ bmi, height, system }) {
   const parsedBmi = parseFloat(bmi);
 
   return (
-    <div className="p-8 text-pure-white rounded-2xl bg-gradient-to-r from-blue to-[#587DFF] md:grid-cols-2 md:rounded-r-[99px] transition-all duration-1000 ease-in-out">
+    <div className="p-8 text-pure-white rounded-2xl bg-gradient-to-r from-blue to-[#587DFF] md:grid-cols-2 md:rounded-r-[6.1875rem] transition-all duration-1000 ease-in-out">
       { isNaN(parsedBmi) ? (
         <div className="flex flex-col items-start gap-y-4">
           <div className="text-heading-m leading-body font-semibold">Welcome</div>
@@ -22,7 +22,7 @@ function BMIDisplay({ bmi, height, system }) {
         <div className="flex flex-col items-center gap-x-6">
           <div className="flex flex-col gap-y-2">
             <div className="text-body-m leading-body font-semibold">Your BMI is...</div>
-            <div className="text-heading-xl leading-heading font-semibold md:pr-[168px] lg:pr-[72px]">{ parsedBmi.toFixed(1) }</div>
+            <div className="text-heading-xl leading-heading font-semibold md:pr-[10.5rem] lg:pr-[4.5rem]">{ parsedBmi.toFixed(1) }</div>
           </div>
           {renderWeight(parsedBmi, height, system)}
         </div>

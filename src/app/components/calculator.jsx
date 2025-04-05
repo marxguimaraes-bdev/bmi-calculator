@@ -17,7 +17,7 @@ function Calculator() {
   });
 
   return (
-    <div className="flex flex-col gap-y-6 lg:gap-y-8 mx-5 -mt-[169px] bg-pure-white text-gunmetal drop-shadow-custom rounded-calculator p-6 md:-mt-[35%] lg:mt-[10.0625rem] lg:-ml-[16.625rem] lg:w-[35.25rem] lg:h-fit lg:p-8">
+    <div className="flex flex-col gap-y-6 lg:gap-y-8 mx-5 -mt-[10.5625rem] bg-pure-white text-gunmetal drop-shadow-custom rounded-calculator p-6 md:-mt-[35%] lg:mt-[10.0625rem] lg:-ml-[16.625rem] lg:w-[35.25rem] lg:h-fit lg:p-8">
       <div className="text-heading-m font-semibold leading-heading">Enter your details below</div>
       <div className="grid grid-cols-2 gap-x-6">
         <div className="flex flex-start items-center">
