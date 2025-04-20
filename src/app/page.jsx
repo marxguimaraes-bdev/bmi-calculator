@@ -45,31 +45,31 @@ export default function IndexPage() {
             Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.
           </Card>
         </section>
-        <section title="Limitations of BMI" className="flex flex-col mx-6 gap-y-14 md:mx-10 lg:mx-[8.75rem]">
-          <div className="flex flex-col text-center gap-y-10 md:flex-row md:gap-x-[4rem] lg:gap-x-[8.75rem] lg:grid lg:grid-cols-2">
-            <div className="flex flex-col gap-y-8 lg:text-start">
-              <h1 className="text-heading text-gunmetal leading-heading font-semibold leading-heading-s lg:text-heading-l">Limitations of BMI</h1>
-              <div className="text-dark-electric-blue leading body">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</div>
-              <Image src="/images/pattern-curved-line-right.svg" alt="Line curved to the right" width={94} height={122} className="hidden self-start lg:flex lg:self-center" />
-            </div>
+        <section title="Limitations of BMI" className={`
+          grid gap-y-4 grid-cols-1 sm:grid-cols-2 sm:gap-x-5 xl:grid-cols-3 xl:gap-6 w-full
+          pt-8 pb-24 pl-[19px] pr-[29px]
+          sm:pt-14 sm:pl-[39px] sm:pr-[43px]
+        `}>
+          <div className="flex flex-col text-center xl:text-left gap-y-8 pb-10 sm:col-span-2 xl:max-w-[564px] xl:ml-[140px]">
+            <h1 className="text-heading text-gunmetal leading-heading font-semibold leading-heading-s xl:text-heading-l">Limitations of BMI</h1>
+            <div className="text-dark-electric-blue leading body">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</div>
           </div>
-          <div className="grid gap-y-5 md:grid-cols-4 md:gap-x-5 lg:grid-cols-6 lg:gap-10 lg:-mt-[18rem]">
-            <SmallCard icon="/images/icon-gender.svg" alt="Mars and venus icon" title="Gender" className="md:col-span-2 lg:col-start-4 lg:ml-[5rem] lg:-mr-[5rem]">
-              The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.
-            </SmallCard>
-            <SmallCard icon="/images/icon-age.svg" alt="Cake icon" title="Age" className="md:col-span-2 lg:col-start-3">
-              In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.
-            </SmallCard>
-            <SmallCard icon="/images/icon-muscle.svg" alt="Biceps icon" title="Muscle" className="md:col-span-2 lg:col-start-5">
-              BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
-            </SmallCard>
-            <SmallCard icon="/images/icon-pregnancy.svg" alt="Baby icon" title="Pregnancy" className="md:col-span-2 lg:col-start-2">
-              Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.
-            </SmallCard>
-            <SmallCard icon="/images/icon-race.svg" alt="Person icon" title="Race" className="md:col-span-2 md:col-start-2 lg:col-start-4">
-              Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.
-            </SmallCard>
-          </div>
+          {/* <Image src="/images/pattern-curved-line-right.svg" alt="Line curved to the right" width={94} height={122} className="hidden self-start xl:flex xl:self-center absolute" /> */}
+          <SmallCard icon="/images/icon-gender.svg" alt="Mars and venus icon" title="Gender" className="xl:col-start-3 xl:mb-[12px]">
+            The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.
+          </SmallCard>
+          <SmallCard icon="/images/icon-age.svg" alt="Cake icon" title="Age" className="xl:col-start-1">
+            In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.
+          </SmallCard>
+          <SmallCard icon="/images/icon-muscle.svg" alt="Biceps icon" title="Muscle" className="xl:col-start-2">
+            BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
+          </SmallCard>
+          <SmallCard icon="/images/icon-pregnancy.svg" alt="Baby icon" title="Pregnancy" className="xl:col-start-1">
+            Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.
+          </SmallCard>
+          <SmallCard icon="/images/icon-race.svg" alt="Person icon" title="Race" className="sm:!w-[365px] sm:ml-[160.5px] sm:col-start-1 xl:col-start-2">
+            Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.
+          </SmallCard>
         </section>
       </main >
     </div >
