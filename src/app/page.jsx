@@ -17,11 +17,11 @@ export default function IndexPage() {
           </div>
           <Calculator />
         </section>
-        <section title="What your BMI result means" className="grid grid-cols-1 sm:grid-cols-2 sm:mx-[2.6875rem] xl:mx-[8.75rem] gap-y-8 xl:gap-y-[2.1875rem]">
-          <Image src="/images/image-man-eating.webp" alt="Man eating sushi" width={375} height={352} className="mb-4 sm:mb-0 sm:row-span-3 sm:-ml-[9.9375rem] sm:min-w-[27.1875rem] xl:w-[35.25rem] xl:h-[33.3125rem]" />
-          <Image src="/images/pattern-curved-line-left.svg" alt="Line curved to the left" width={85} height={200} className="hidden xl:flex" />
-          <h1 className="px-6 sm:px-0 sm:mt-[2.1875rem] text-heading text-gunmetal leading-heading font-semibold leading-heading-s xl:text-heading-l">What your BMI result means</h1>
-          <div className="px-6 sm:px-0 text-dark-electric-blue text-body-m leading-body">
+        <section title="What your BMI result means" className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 sm:mx-[2.6875rem] xl:mx-[8.75rem] gap-y-8 xl:gap-y-[2.1875rem] xl:mt-[1.5625rem]">
+          <Image src="/images/image-man-eating.webp" alt="Man eating sushi" width={564} height={533} className="mb-4 sm:mb-0 sm:row-span-3 sm:-ml-[9.9375rem] xl:ml-0 sm:min-w-[27.1875rem] xl:w-[35.25rem] xl:h-[33.3125rem] xl:self-end" />
+          <Image src="/images/pattern-curved-line-left.svg" alt="Line curved to the left" width={85} height={200} className="hidden xl:flex justify-self-end self-start absolute xl:mr-[1.6875rem] xl:-mt-[3.25rem]" />
+          <h1 className="px-6 sm:px-0 sm:mt-[2.1875rem] xl:mt-[11.5rem] xl:w-[29.0625rem] xl:justify-self-end text-heading text-gunmetal leading-heading font-semibold leading-heading-s xl:text-heading-l xl:tracking-tighter">What your BMI result means</h1>
+          <div className="px-6 sm:px-0 xl:w-[29.0625rem] xl:justify-self-end text-dark-electric-blue text-body-m leading-body">
             A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
           </div>
         </section>
