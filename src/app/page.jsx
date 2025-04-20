@@ -30,9 +30,9 @@ export default function IndexPage() {
           </div >
         </section >
         <section title="health tips" className={`
-          grid gap-y-10 gap-x-6 my-10 lg:grid-cols-3 bg-gradient-linear
+          grid gap-y-10 gap-x-6 my-10 xl:grid-cols-3 bg-gradient-linear
           py-[56px] pl-[19px] pr-[29px]
-          md:py-[60px] md:pl-[39px] md:pr-[43px]
+          sm:py-[60px] sm:pl-[39px] sm:pr-[43px]
           xl:mx-6 xl:px-[116px] xl:pt-[72px] xl:pb-[96px] xl:rounded-[35px]
         `}>
           <Card icon="/images/icon-eating.svg" alt="Food icon" title="Healthy eating">
