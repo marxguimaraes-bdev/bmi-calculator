@@ -17,18 +17,14 @@ export default function IndexPage() {
           </div>
           <Calculator />
         </section>
-        <section title="What your BMI result means" className="flex flex-col mx-6 xl:gap-y-10 sm:mx-10 xl:mx-[8.75rem]">
-          <div className="flex flex-col justify-around gap-y-10 sm:flex-row sm:gap-x-[4rem] xl:gap-x-[8.75rem] sm:-ml-[12%] xl:ml-0">
-            <Image src="/images/image-man-eating.webp" alt="Man eating sushi" width={375} height={352} className="xl:w-[35.25rem] xl:h-[33.3125rem]" />
-            <div className="flex flex-col gap-y-8">
-              <Image src="/images/pattern-curved-line-left.svg" alt="Line curved to the left" width={85} height={200} className="hidden self-end xl:flex" />
-              <h1 className="text-heading text-gunmetal leading-heading font-semibold leading-heading-s xl:text-heading-l">What your BMI result means</h1>
-              <div className="text-dark-electric-blue leading body">
-                A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
-              </div>
-            </div >
-          </div >
-        </section >
+        <section title="What your BMI result means" className="grid grid-cols-1 sm:grid-cols-2 sm:mx-[2.6875rem] xl:mx-[8.75rem] gap-y-8 xl:gap-y-[2.1875rem]">
+          <Image src="/images/image-man-eating.webp" alt="Man eating sushi" width={375} height={352} className="mb-4 sm:mb-0 sm:row-span-3 sm:-ml-[9.9375rem] sm:min-w-[27.1875rem] xl:w-[35.25rem] xl:h-[33.3125rem]" />
+          <Image src="/images/pattern-curved-line-left.svg" alt="Line curved to the left" width={85} height={200} className="hidden xl:flex" />
+          <h1 className="px-6 sm:px-0 sm:mt-[2.1875rem] text-heading text-gunmetal leading-heading font-semibold leading-heading-s xl:text-heading-l">What your BMI result means</h1>
+          <div className="px-6 sm:px-0 text-dark-electric-blue text-body-m leading-body">
+            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
+          </div>
+        </section>
         <section title="health tips" className={`
           grid gap-y-10 gap-x-6 xl:grid-cols-3 bg-gradient-linear
           my-[72px] py-[56px] pl-[19px] pr-[29px]
