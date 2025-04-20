@@ -38,7 +38,7 @@ function Calculator() {
   return (
     <div ref={(el) => setRef(el)} className={`
       flex flex-col bg-pure-white text-gunmetal drop-shadow-custom rounded-calculator h-fit mozilla-max-h-fit xl:absolute
-      gap-y-6 xl:gap-y-8 mx-5 -mt-[10.5625rem] p-6 sm:-mt-[17.875rem] xl:mt-[10.4375rem] xl:ml-[44.5rem] xl:w-[35.25rem] xl:p-8`}
+      gap-y-6 xl:gap-y-8 mx-5 -mt-[10.5625rem] p-6 sm:-mt-[17.875rem] xl:mt-[182px] xl:ml-[44.5rem] xl:w-[35.25rem] xl:p-8`}
     >
       <div className="text-heading-m font-semibold leading-heading">Enter your details below</div>
       <div className="grid grid-cols-2 gap-x-6">
