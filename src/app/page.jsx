@@ -6,15 +6,15 @@ import SmallCard from "@/components/small-card";
 export default function IndexPage() {
   return (
     <main className='flex flex-col font-custom min-h-screen items-center bg-pure-white gap-y-10 pb-10'>
-      <section title="Body Mass Index Calculator" className="flex flex-col w-full lg:overflow-visible lg:flex-row lg:px-6">
-        <div className="flex flex-col items-center gap-y-[1.5rem] md:gap-y-[2.5rem] lg:gap-y-[7.9375rem] text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-linear lg:py-[4.47625rem] md:px-22 lg:pl-[7.25rem] lg:pr-[18.625rem] lg:max-w-[61.125rem] lg:h-[46.0625rem] lg:items-start lg:text-left">
-          <Image src="/images/logo.svg" width={40} height={40} alt="Company logo" className="lg:w-[4rem] lg:h-[4rem]" />
-          <div className="flex flex-col gap-y-6 lg:mt-12 lg:gap-y-[2.1875rem]">
-            <h1 className="text-gunmetal text-heading-l leading-heading font-semibold md:px-[8rem] lg:pl-0 lg:pr-12 lg:text-heading-xl">Body Mass Index Calculator</h1>
-            <div className="text-dark-electric-blue leading-body lg:pr-[6.1875rem]">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</div>
+      <section title="Body Mass Index Calculator" className="flex flex-col w-full xl:overflow-visible xl:flex-row xl:px-6">
+        <div className="flex flex-col items-center gap-y-[1.5rem] sm:gap-y-[2.5rem] xl:gap-y-[7.9375rem] text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-linear xl:py-[4.47625rem] sm:px-22 xl:pl-[7.25rem] xl:pr-[18.625rem] xl:max-w-[61.125rem] xl:h-[46.0625rem] xl:items-start xl:text-left">
+          <Image src="/images/logo.svg" width={40} height={40} alt="Company logo" className="xl:w-[4rem] xl:h-[4rem]" />
+          <div className="flex flex-col gap-y-6 xl:mt-12 xl:gap-y-[2.1875rem]">
+            <h1 className="text-gunmetal text-heading-l leading-heading font-semibold sm:px-[8rem] xl:pl-0 xl:pr-12 xl:text-heading-xl">Body Mass Index Calculator</h1>
+            <div className="text-dark-electric-blue leading-body xl:pr-[6.1875rem]">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</div>
           </div>
         </div>
-        <Calculator  />
+        <Calculator />
       </section>
       <section title="What your BMI result means" className="flex flex-col mx-6 lg:gap-y-10 md:mx-10 lg:mx-[8.75rem]">
         <div className="flex flex-col justify-around gap-y-10 md:flex-row md:gap-x-[4rem] lg:gap-x-[8.75rem] md:-ml-[12%] lg:ml-0">
