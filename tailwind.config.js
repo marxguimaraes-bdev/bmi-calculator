@@ -10,6 +10,13 @@ module.exports = {
       custom: ['Inter', 'sans-serif'],
     },
     extend: {
+      animation: {
+        'fade-in': 'fadeIn 400ms ease-in',
+        'stretch-medium': 'stretchMedium 100ms ease-in-out',
+        'stretch-large': 'stretchLarge 100ms ease-in-out',
+        'shrink-medium': 'shrinkMedium 100ms ease-in-out',
+        'shrink-large': 'shrinkLarge 100ms ease-in-out',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -27,6 +34,9 @@ module.exports = {
         'borders': '#D8E2E7',
         'pure-white': '#FFFFFF',
       },
+      dropShadow: {
+        'custom': '32px 16px 56px rgba(143, 174, 207, 0.25)',
+      },
       fontSize: {
         'body-s': '0.875rem',
         'body-m': '1rem',
@@ -34,6 +44,48 @@ module.exports = {
         'heading': '2rem',
         'heading-l': '3rem',
         'heading-xl': '4rem',
+      },
+      keyframes: {
+        fadeIn: {
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        },
+        stretchMedium: {
+          from: {
+            height: '425px',
+          },
+          to: {
+            height: '550px',
+          },
+        },
+        stretchLarge: {
+          from: {
+            height: '457px',
+          },
+          to: {
+            height: '582px',
+          },
+        },
+        shrinkMedium: {
+          from: {
+            height: '550px',
+          },
+          to: {
+            height: '425px',
+          },
+        },
+        shrinkLarge: {
+          from: {
+            height: '582px',
+          },
+          to: {
+            height: '457px',
+          },
+        },
       },
       lineHeight: {
         'heading': '110%',
@@ -43,9 +95,6 @@ module.exports = {
         'heading-m': '-0.075rem',
         'heading-l': '-0.15rem',
         'heading-xl': '-0.2rem',
-      },
-      dropShadow: {
-        'custom': '32px 16px 56px rgba(143, 174, 207, 0.25)',
       },
     },
   },

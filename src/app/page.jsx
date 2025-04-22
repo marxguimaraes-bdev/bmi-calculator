@@ -14,7 +14,7 @@ export default function IndexPage() {
             <div className="text-dark-electric-blue leading-body lg:pr-[6.1875rem]">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</div>
           </div>
         </div>
-        <Calculator  />
+        <Calculator />
       </section>
       <section title="What your BMI result means" className="flex flex-col mx-6 lg:gap-y-10 md:mx-10 lg:mx-[8.75rem]">
         <div className="flex flex-col justify-around gap-y-10 md:flex-row md:gap-x-[4rem] lg:gap-x-[8.75rem] md:-ml-[12%] lg:ml-0">
