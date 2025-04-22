@@ -23,14 +23,14 @@ function Calculator() {
     if (ref) {
       if (system === 'metric') {
         ref.classList.add('sm:animate-shrink-medium');
-        ref.classList.add('sm:animate-shrink-large');
+        ref.classList.add('xl:animate-shrink-large');
         ref.classList.remove('sm:animate-stretch-medium');
-        ref.classList.remove('sm:animate-stretch-large');
+        ref.classList.remove('xl:animate-stretch-large');
       } else {
         ref.classList.add('sm:animate-stretch-medium');
-        ref.classList.add('sm:animate-stretch-large');
+        ref.classList.add('xl:animate-stretch-large');
         ref.classList.remove('sm:animate-shrink-medium');
-        ref.classList.remove('sm:animate-shrink-large');
+        ref.classList.remove('xl:animate-shrink-large');
       }
     }
   }, [system]);
