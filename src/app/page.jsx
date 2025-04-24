@@ -5,7 +5,7 @@ import SmallCard from "@/components/small-card";
 
 export default function IndexPage() {
   return (
-    <div class="bg-pure-white">
+    <div className="bg-pure-white">
       <main className='flex flex-col font-custom items-center bg-pure-white gap-y-10 pb-10 xl:max-w-[90rem] xl:mx-auto'>
         <section title="Body Mass Index Calculator" className="flex flex-col w-full xl:overflow-visible xl:flex-row xl:px-6">
           <div className="flex flex-col items-center gap-y-[1.5rem] sm:gap-y-[2.5rem] xl:gap-y-[7.9375rem] text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-linear xl:py-[4.47625rem] sm:px-22 xl:pl-[7.25rem] xl:pr-[18.625rem] xl:max-w-[61.125rem] xl:h-[46.0625rem] xl:items-start xl:text-left">
