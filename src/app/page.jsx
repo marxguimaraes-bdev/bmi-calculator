@@ -6,7 +6,7 @@ import SmallCard from "@/components/small-card";
 export default function IndexPage() {
   return (
     <div class="bg-pure-white">
-      <main className='flex flex-col font-custom min-h-screen items-center bg-pure-white gap-y-10 pb-10 xl:max-w-[90rem] xl:mx-auto'>
+      <main className='flex flex-col font-custom items-center bg-pure-white gap-y-10 pb-10 xl:max-w-[90rem] xl:mx-auto'>
         <section title="Body Mass Index Calculator" className="flex flex-col w-full xl:overflow-visible xl:flex-row xl:px-6">
           <div className="flex flex-col items-center gap-y-[1.5rem] sm:gap-y-[2.5rem] xl:gap-y-[7.9375rem] text-center rounded-b-heading p-6 min-h-[40rem] bg-gradient-linear xl:py-[4.47625rem] sm:px-22 xl:pl-[7.25rem] xl:pr-[18.625rem] xl:max-w-[61.125rem] xl:h-[46.0625rem] xl:items-start xl:text-left">
             <Image src="/images/logo.svg" width={40} height={40} alt="Company logo" className="xl:w-[4rem] xl:h-[4rem]" />
@@ -23,20 +23,27 @@ export default function IndexPage() {
             <div className="flex flex-col gap-y-8">
               <Image src="/images/pattern-curved-line-left.svg" alt="Line curved to the left" width={85} height={200} className="hidden self-end xl:flex" />
               <h1 className="text-heading text-gunmetal leading-heading font-semibold leading-heading-s xl:text-heading-l">What your BMI result means</h1>
-              <div className="text-dark-electric-blue leading body">A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</div>
-            </div>
-          </div>
-          <div className="grid gap-y-10 gap-x-6 my-10 lg:grid-cols-3">
-            <Card icon="/images/icon-eating.svg" alt="Food icon" title="Healthy eating">
-              Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.
-            </Card>
-            <Card icon="/images/icon-exercise.svg" alt="Dumbell icon" title="Regular exercise">
-              Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.
-            </Card>
-            <Card icon="/images/icon-sleep.svg" alt="Moon icon" title="Adequate sleep">
-              Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.
-            </Card>
-          </div>
+              <div className="text-dark-electric-blue leading body">
+                A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.
+              </div>
+            </div >
+          </div >
+        </section >
+        <section title="health tips" className={`
+          grid gap-y-10 gap-x-6 my-10 lg:grid-cols-3 bg-gradient-linear
+          py-[56px] pl-[19px] pr-[29px]
+          md:py-[60px] md:pl-[39px] md:pr-[43px]
+          xl:mx-6 xl:px-[116px] xl:pt-[72px] xl:pb-[96px] xl:rounded-[35px]
+        `}>
+          <Card icon="/images/icon-eating.svg" alt="Food icon" title="Healthy eating">
+            Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.
+          </Card>
+          <Card icon="/images/icon-exercise.svg" alt="Dumbell icon" title="Regular exercise">
+            Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.
+          </Card>
+          <Card icon="/images/icon-sleep.svg" alt="Moon icon" title="Adequate sleep">
+            Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.
+          </Card>
         </section>
         <section title="Limitations of BMI" className="flex flex-col mx-6 gap-y-14 md:mx-10 lg:mx-[8.75rem]">
           <div className="flex flex-col text-center gap-y-10 md:flex-row md:gap-x-[4rem] lg:gap-x-[8.75rem] lg:grid lg:grid-cols-2">
@@ -64,7 +71,7 @@ export default function IndexPage() {
             </SmallCard>
           </div>
         </section>
-      </main>
-    </div>
+      </main >
+    </div >
   );
 };
